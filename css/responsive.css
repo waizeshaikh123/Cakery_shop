@@ -1,0 +1,84 @@
+/* landScape screen */
+@media (max-width:1024px) {
+    #header{
+        .anchors li{
+            display: none;
+        }
+        .res-bar{
+            opacity: 1;
+            position: absolute;
+            top: 6rem;
+            font-size: 2.6rem;
+        }    
+        .home-main{
+            .home{
+                display: none;
+            }
+        }
+    }
+    
+}
+/* Tab screen */
+@media (max-width:1023px) {
+    #header{
+        width: 100%;
+        .logo{
+            position: absolute;
+            right: 4rem;
+            top: 0.55rem;
+        }
+        .call{
+            display: none;
+        }
+    }
+    #hero-section{
+        position: relative;
+        .healthy h1{
+            font-size: 5rem;
+            line-height: 90px;
+            padding-top:20px ;
+        }
+    }
+    .testimonial{
+        width: 90%;
+        padding: 0;
+    }
+    .testimonial-card{
+        width: 10%;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+        a,
+        span{
+            padding-left: 3rem;
+        }
+    }
+}
+/* portrait screen */
+@media (max-width:767px) {
+    #header{
+        width: 100%;
+        .logo{
+            position: absolute;
+            right: 1rem;
+        }
+    }
+    #hero-section{
+        .healthy h1{
+            padding-top: 6rem;
+            line-height: 5rem;
+            text-align: center;
+            font-size: 4rem;
+        }
+    }
+    /* hero-section 2 */
+    #hero-section{
+        .res-hero-sec-2 h1{
+            padding-top: 0rem;
+        }
+    }
+    .testimonial{
+    height: 80vh;
+
+    }
+}

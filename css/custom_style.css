@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Dancing Script', cursive;
+    background: #000;
+}
+.call{
+    border: 1px solid #E5BF4A;
+    background: transparent;
+    padding: 0.758rem 2rem;
+    color: #E5BF4A;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+}
+.call:hover{
+    background: #E5BF4A;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 200px;
+    background: #0A0A0A;
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    .icon i{
+        font-size: 1.12rem;
+        color: #fff;
+    }
+    
+    .anchors li{
+        font-size: 1rem;
+        position: relative;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all ease-in 0.3s;
+    }
+    .anchors a li:hover{
+        color: #E5BF4A;
+    }
+    .anchors li::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        border-radius: 2rem;
+        background: #E5BF4A;
+        top: 2.3rem;
+        left: 0;
+    }
+    .anchors li:hover::after{
+        width: 100%;
+        transition: all ease-in-out 0.4s;
+        color: #E5BF4A;
+    }
+    .res-bar{
+        position: absolute;
+        right: 4rem;
+        cursor: pointer;
+        opacity: 0;
+    }
+    .home{
+        position: absolute;
+        top: 12rem;
+        left: 2rem;
+        opacity: 0;
+    }
+    .home-main{
+        position: relative;
+    }
+    .card{
+        position: absolute;
+        top: 3rem;
+        right: 22rem;
+        opacity: 0;
+    }
+    .card a{
+        color: #000;
+        position: relative;
+        transition: all linear 0.5s;
+    }
+    .card a:hover{
+        color: #E5BF4A;
+    }
+}
+/* hero section  */
+#hero-section{
+    position: relative;
+    .bg{
+        margin-top:12rem;
+        width: 100%;
+        height:100vh;
+        background: url(/images/bg_img/bg_1.png) no-repeat;
+        background-position: top;
+    }
+    .healthy h1{
+        font-size: 5.6rem;
+        color: #fff;
+        padding-top: 13rem;
+        line-height: 110px;
+    }
+    .call-order{
+        background: #E5BF4A;
+        color: #000;
+    }
+    .call-order:hover{
+        background: transparent;
+        color: #fff;
+    }
+}
+/* hero section 2 */
+#hero-section{
+    position: relative;
+
+    .line{
+        background: #E5BF4A;
+        height: 2px;
+        width: 100px;
+    }
+    .hero-left{
+        
+        .hero-h1{
+            color: #E5BF4A;
+        }
+    }
+    .right-img{
+        object-fit: cover;
+        object-position: center;
+    }
+}
+/* testimonial hero section 3 */
+.testimonial{
+    position: relative;
+    .testi-row{
+        padding:3rem 12rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .testi-span{
+        color: #E5BF4A;
+    }
+    .testimonial-card{
+        width: 20rem;
+        border: none;
+        overflow: hidden;
+        border-radius: 2px;
+        position: relative;
+        background: transparent;
+        a{
+            color: white;
+            font-size: 1.4rem;
+        }
+    }
+    .testimonial-card img{
+        transition: all ease-in-out 0.5s;
+    }
+    .testimonial-card img:hover{
+        transform:scale(1.2);
+    }
+    .add-card{
+        width: 100%;
+        height: 40px;
+        background: #E5BF4A;
+        color: #000;
+        position: relative;
+        top: -8.6rem;
+        font-weight: 900;
+        z-index: 999;
+        display: none;
+    }
+}
