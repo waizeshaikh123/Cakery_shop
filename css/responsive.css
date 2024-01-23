@@ -78,7 +78,19 @@
         }
     }
     .testimonial{
-    height: 80vh;
-
+    height: 70vh;
+    }
+    .video{
+        width: 90vw;
+        height: 30vh;
+    }
+    .our_blog{
+        position: relative;
+        img{
+            display: none;
+        }
+    }
+    .footer{
+        height: 190vh;
     }
 }

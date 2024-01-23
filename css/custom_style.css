@@ -9,6 +9,35 @@ html,body{
     font-family: 'Dancing Script', cursive;
     background: #000;
 }
+.browny{
+    color: #E5BF4A;
+}
+
+.anchors li{
+    font-size: 1rem;
+    position: relative;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all ease-in 0.3s;
+}
+.anchors a li:hover{
+    color: #E5BF4A;
+}
+.anchors li::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    border-radius: 2rem;
+    background: #E5BF4A;
+    top: 2.3rem;
+    left: 0;
+}
+.anchors li:hover::after{
+    width: 100%;
+    transition: all ease-in-out 0.4s;
+    color: #E5BF4A;
+}
 .call{
     border: 1px solid #E5BF4A;
     background: transparent;
@@ -33,32 +62,12 @@ html,body{
     .icon i{
         font-size: 1.12rem;
         color: #fff;
+        cursor: pointer;
+        transition: all ease 0.3s;
     }
-    
-    .anchors li{
-        font-size: 1rem;
-        position: relative;
-        font-weight: 500;
-        text-transform: uppercase;
-        transition: all ease-in 0.3s;
-    }
-    .anchors a li:hover{
+    .icon i:hover{
         color: #E5BF4A;
-    }
-    .anchors li::after{
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 1px;
-        border-radius: 2rem;
-        background: #E5BF4A;
-        top: 2.3rem;
-        left: 0;
-    }
-    .anchors li:hover::after{
-        width: 100%;
-        transition: all ease-in-out 0.4s;
-        color: #E5BF4A;
+        transform: rotate(20deg);
     }
     .res-bar{
         position: absolute;
@@ -103,22 +112,21 @@ html,body{
     .healthy h1{
         font-size: 5.6rem;
         color: #fff;
-        padding-top: 13rem;
+        padding-top: 16rem;
         line-height: 110px;
     }
-    .call-order{
-        background: #E5BF4A;
-        color: #000;
-    }
-    .call-order:hover{
-        background: transparent;
-        color: #fff;
-    }
+}
+.call-order{
+    background: #E5BF4A;
+    color: #000;
+}
+.call-order:hover{
+    background: transparent;
+    color: #fff;
 }
 /* hero section 2 */
 #hero-section{
     position: relative;
-
     .line{
         background: #E5BF4A;
         height: 2px;
@@ -176,4 +184,93 @@ html,body{
         z-index: 999;
         display: none;
     }
+}
+/* video hero section 4 */
+.video{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(/images/bg_img/video-bg.jpg.png) no-repeat center;
+    background-size: cover;
+    .video-start-1{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #E5BF4A;
+        .video-start-2{
+            width: 96px;
+            height:96px;
+            background: #E5BF4A;
+            a i{
+                font-size: 2rem;
+            }
+        }
+        .video-start-2:hover{
+            background: #fff;
+        }
+    }
+}
+/* food lovers hero-section lAst */
+.food_lover{
+    position: relative;
+    .main-food-div{
+        padding: 0 3rem;
+        border: 1px solid rgba(128, 128, 128, 0.318);
+    }
+    .left-food{
+        border-left-style: none;
+    }
+    .star i{
+        color: #E5BF4A;
+    }
+    .food-para p{
+        color: wheat;
+        font-size: 2rem;
+    }
+    .right-food{
+        border-right-style:none ;
+    }
+}
+/* Our Blog */
+.our_blog{
+    position: relative;
+    .learn_more{
+        border: 1px solid rgba(128, 128, 128, 0.248);
+    }
+    .learn_more h3{
+        color: #E5BF4A;
+    }
+    .learn_more a{
+        width: 112px;
+        border-bottom: 3px solid #E5BF4A;
+        border-radius: 0.22rem;
+        transition: all linear 0.3s;
+    }
+    .learn_more a:hover{
+        color: #E5BF4A;
+        width: 48%;
+        letter-spacing: 0.1rem;
+    }
+    .row{
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+    }
+}
+/* Follow Insta */
+.insta{
+    position: relative;
+    .follow_insta{
+        padding: 3rem 0;
+    }
+    button{
+        background: transparent;
+        padding: 0.99rem 2rem;
+        color: #E5BF4A;
+        border: 1px solid #E5BF4A;
+    }
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 100vh;
 }
