@@ -274,5 +274,116 @@ html,body{
     width: 100%;
     height: 100vh;
 }
-
-/* about page */
+/* blog page */
+.blog{
+    position: relative;
+    article{
+        position: relative;
+    }
+    .after{
+        position: absolute;
+        width: 6.7vw;
+        height: 15vh;
+        background: #E5BF4A;
+        border-radius: 0.66rem;
+        top: 23rem;
+        left: 5rem;
+        color: white;
+        font-weight: 800;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: all ease-in-out 0.3s;
+        cursor: pointer;
+    }
+    .after:hover{
+        background: transparent;
+        color: #E5BF4A;
+    }
+    .blog-para a{
+        color: #fff;
+        font-size: 2rem;
+        transition: all ease 0.3s;
+    }
+    .blog-para a:hover{
+        color: #E5BF4A;
+    }
+    .blog-para-2 hr{
+        width: 1px;
+        height: 20px;   
+        background: gray;
+    }
+    .blog-para-2 a{
+        font-size: 1rem;
+        color: #E5BF4A;
+        transition: 0.3s;
+    }
+    .blog-para-2 a:hover{
+        color: #e5be4aa1;
+    }
+    .form input{
+        width: 50%;
+        border: 1px solid rgba(209, 200, 200, 0.438);
+    }
+    .form button{
+        border: none;
+        background: #E5BF4A;
+        color: #fff;
+    }
+    .form-a a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #000;
+        font-weight:400;
+        transition: all ease-in-out 0.3s;
+    }
+    .form-a a:hover{
+        color: #E5BF4A;
+    }
+    .form-cloud button{
+        padding: 0.20rem 1.5rem;
+        border: 1px solid #a3a09676;
+        color: #E5BF4A;
+        background: transparent;
+        transition: all ease-out 0.4s;
+    }
+    .form-cloud button:hover{
+        color: #fff;
+        background: #E5BF4A;
+    }
+    .form-cloud input{
+        width: 100%;
+    }
+    .form-cloud .but{
+        margin-top: 10px;
+        width: 100%;
+        border: 1px solid #E5BF4A;
+    }
+}
+/* map */
+.map{
+    position: relative;
+    iframe{
+        height: 100vh;
+    }
+}
+/* forminng */
+.form{
+    position: relative;
+    .forming button{
+        background: #E5BF4A;
+        color: #000;
+        transition: all ease-out 0.4s;
+        border: 1px solid #E5BF4A;
+    }
+    .forming textarea{
+        border: 1px solid #fff;
+        background: transparent;
+    }
+    .forming input{
+        background: transparent;
+        border: 1px solid #fff;
+        height: 10vh;
+    }
+    .forming button:hover{
+        background: transparent;
+        color: #E5BF4A;
+    }
+}

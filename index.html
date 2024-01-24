@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="images/logo.png.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/custom_style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -23,7 +25,7 @@
 
 <body>
     <!-- Header -->
-    <header id="header">
+    <header id="header" data-aos="zoom-out">
         <nav>
 
             <div class="container-fluid px-4">
@@ -115,7 +117,7 @@
         <div class="container-fluid bg ">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="zoom-in-down">
                         <div class="healthy d-flex justify-content-start align-items-center">
                             <h1>Healthy Made <br> Delicious Cake</h1>
                         </div>
@@ -128,7 +130,7 @@
         </div>
 
         <!-- about type section -->
-        <div class="container py-5">
+        <div class="container py-5" data-aos="zoom-in-up">
             <div class=" text-center mx-auto py-5 res-hero-sec-2">
                 <h1 class=" text-white lh-base">This is Schilers. Awesome Food <br> Theme purchase it and it <br>
                     Burgers</h1>
@@ -324,7 +326,7 @@
         </div>
 
         <!-- video section -->
-        <div class="container video py-5 d-flex justify-content-center align-items-center">
+        <div class="container video py-5 d-flex justify-content-center align-items-center" data-aos="zoom-in-up">
             <div class="video-start-1 d-flex justify-content-center align-items-center rounded-circle">
                 <div class="video-start-2 d-flex justify-content-center align-items-center rounded-circle">
                     <a href="https://youtu.be/7h6Vjd8z_7E?si=Qko_NNPXi2dRS_ek"
@@ -341,7 +343,7 @@
                     <h1>Food Lover`s Say</h1>
                 </div>
 
-                <div class="row py-5">
+                <div class="row py-5" data-aos="fade-down">
                     <div class="col-lg-4 col-md-12 col-sm-12   main-food-div left-food">
                         <div class="py-5 d-flex flex-column justify-content-start gap-3">
                             <div class="star">
@@ -453,7 +455,7 @@
     </section>
 
     <!-- Insta Page -->
-    <section class="insta">
+    <section class="insta" data-aos="fade-down">
         <div class="container">
             <div class="follow_insta text-center mx-auto">
                 <h1 class=" text-white">Follow Us on Instagram</h1>
@@ -574,7 +576,8 @@
 
             <div class="row py-5">
                 <div class=" mx-auto text-center">
-                    <p class=" text-white fs-4">Copyright ©2024 All rights reserved | This template is made with 🧡 by Waize-tech</p>
+                    <p class=" text-white fs-4">Copyright ©2024 All rights reserved | This template is made with 🧡 by
+                        Waize-tech</p>
                 </div>
             </div>
         </div>
@@ -582,6 +585,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 400,
+            delay: 300
+        });
+    </script>
 </body>
 
 </html>

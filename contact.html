@@ -15,18 +15,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/custom_style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="images/logo.png.png">
     <title>Cake_Shop</title>
 </head>
 
 <body>
     <!-- Header -->
-    <header id="header">
+    <header id="header" data-aos="zoom-in">
         <nav>
 
-            <div class="container-fluid px-4">
+            <div class="container-fluid px-4 ">
                 <div class="row">
                     <div class=" d-flex justify-content-between align-items-center pt-4">
                         <div class="col-lg-4">
@@ -115,7 +117,7 @@
         <div class="container-fluid bg ">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="zoom-out-up">
                         <div class="healthy d-flex justify-content-start align-items-center">
                             <h1>Contact US</h1>
                         </div>
@@ -127,10 +129,89 @@
             </div>
         </div>
 
+        <!-- map -->
+        <div class="container map py-5" data-aos="fade-up">
+            <div class="row">
+                <div class="col-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115359.09681909326!2d68.33803779066255!3d25.372262400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1706085113745!5m2!1sen!2s"
+                        width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- form -->
+        <div class="form py-5" data-aos="fade-down">
+            <div class="container">
+                <h1 class=" text-white py-2">Get in Touch</h1>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div class="forming">
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"
+                                    placeholder="Enter Message"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Enter Your name"
+                                        aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="type" class="form-control" placeholder="Email " aria-label="Last name">
+                                </div>
+                            </div>
+
+                            <div class="row pt-3">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Enter subject"
+                                        aria-label="First name">
+                                </div>
+                            </div>
+                            <div class="py-4">
+                                <button class=" py-3 px-5">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class=" d-flex justify-content-start flex-column gap-5">
+                            <div class=" d-flex justify-content-center align-items-center gap-4">
+                                <div>
+                                    <i class="fa-solid fa-house-chimney text-white fs-1"></i>
+                                </div>
+                                <div>
+                                    <h5 class=" text-secondary">Buttonwood, California.</h5>
+                                    <h5 class=" text-white">Rosemead, CA 91770</h5>
+                                </div>
+                            </div>
+                            <div class=" d-flex justify-content-center align-items-center gap-4">
+                                <div>
+                                    <i class="fa-solid fa-mobile text-white fs-1"></i>
+                                </div>
+                                <div>
+                                    <h5 class=" text-secondary">
+                                        +1 253 565 2365</h5>
+                                    <h5 class=" text-white">Mon to Fri 9am to 6pm</h5>
+                                </div>
+                            </div>
+                            <div class=" d-flex justify-content-center align-items-center gap-4">
+                                <div>
+                                    <i class="fa-solid fa-envelope text-white fs-1"></i>
+                                </div>
+                                <div>
+                                    <h5 class=" text-secondary">support@colorlib.com</h5>
+                                    <h5 class=" text-white">Send us your query anytime!</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- footer section -->
-    <footer class="footer py-5">
+    <footer class="footer py-5" data-aos="fade-down">
         <div class="container">
             <div class="row ">
                 <div class="col-lg-6 col-md-12 col-sm-12 ">
@@ -222,6 +303,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 400,
+            delay: 300
+        });
+    </script>
 </body>
 
 </html>
