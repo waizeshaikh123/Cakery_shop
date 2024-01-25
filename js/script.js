@@ -1,19 +1,13 @@
 // navbar 
 
-// let nav = document.querySelector(".home");
-// let bar = document.querySelector(".rest-bar");
-// let a = 0
+let naving = document.querySelector(".home");
+let bar = document.querySelector(".res-bar i");
 
-// bar.addEventListener("click", function(){
-//     if(a == 0){
-//         nav.style.opacity = 1;
-//         a = 1
-//     }
-//     else{
-//         nav.style.opacity = 0;
-//         a = 0
-//     }
-// });
+bar.addEventListener("click", function(){
+    naving.style.display = "block";
+    console.log("hey")
+});
+
 
 let blog = document.querySelector(".blogs");
 let card = document.querySelector(".card");
